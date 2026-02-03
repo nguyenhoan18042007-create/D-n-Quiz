@@ -1,0 +1,886 @@
+// File: data.js
+const rawQuizData = `
+
+
+CÂU HỎI: 1. JavaScript ban đầu được tạo ra với mục đích chính là gì?
+ĐÁP ÁN:
+   A. Thiết kế giao diện trang web
+   B. Thêm tính năng và tương tác cho trang web [ĐÚNG ✅]
+   C. Tạo cơ sở dữ liệu cho website
+   D. Quản lý nội dung văn bản
+---------------------------
+CÂU HỎI: 2. JavaScript hiện nay không được sử dụng trong lĩnh vực nào sau đây?
+ĐÁP ÁN:
+   A. Phát triển web
+   B. Phát triển ứng dụng di động
+   C. Xử lý văn bản trong Microsoft Word [ĐÚNG ✅]
+   D. Phát triển game
+---------------------------
+CÂU HỎI: 3. Khi học JavaScript, người học có thể mở ra cơ hội nghề nghiệp trong lĩnh vực nào sau đây?
+ĐÁP ÁN:
+   A. Phát triển web
+   B. Lập trình di động
+   C. Học máy (Machine Learning)
+   D. Tất cả các đáp án trên [ĐÚNG ✅]
+---------------------------
+CÂU HỎI: 4. Trong mô hình client-server, JavaScript thuộc loại thành phần nào?
+ĐÁP ÁN:
+   A. Tài nguyên tĩnh
+   B. Thành phần động, xử lý logic và tương tác [ĐÚNG ✅]
+   C. Cấu trúc hiển thị nội dung
+   D. Dữ liệu lưu trữ
+---------------------------
+CÂU HỎI: 5. Khi người dùng nhấn nút “Gửi” trên website, phần nào xử lý kiểm tra dữ liệu nhập vào?
+ĐÁP ÁN:
+   A. HTML
+   B. CSS
+   C. JavaScript [ĐÚNG ✅]
+   D. Server
+---------------------------
+CÂU HỎI: 6. Biến trong JavaScript được dùng để làm gì?
+ĐÁP ÁN:
+   A. Hiển thị nội dung
+   B. Lưu trữ và quản lý giá trị [ĐÚNG ✅]
+   C. Trang trí website
+   D. Viết ghi chú
+---------------------------
+CÂU HỎI: 7. Cú pháp khai báo biến đúng trong JavaScript là:
+ĐÁP ÁN:
+   A. variable name = "John";
+   B. var name: "John";
+   C. let name = "John"; [ĐÚNG ✅]
+   D. create name = "John";
+---------------------------
+CÂU HỎI: 8. Dấu bằng (=) trong JavaScript có ý nghĩa là gì?
+ĐÁP ÁN:
+   A. Phép so sánh
+   B. Toán tử cộng
+   C. Toán tử gán [ĐÚNG ✅]
+   D. Toán tử logic
+---------------------------
+CÂU HỎI: 9. Từ khóa dùng để khai báo hằng số trong JavaScript là:
+ĐÁP ÁN:
+   A. let
+   B. var
+   C. const [ĐÚNG ✅]
+   D. static
+---------------------------
+CÂU HỎI: 10. Nếu gán lại giá trị cho biến const sẽ xảy ra điều gì?
+ĐÁP ÁN:
+   A. Bỏ qua lệnh
+   B. Chạy bình thường
+   C. Cảnh báo
+   D. Lỗi assignment to constant variable [ĐÚNG ✅]
+---------------------------
+CÂU HỎI: 11. Hàm prompt() trả về kiểu dữ liệu nào?
+ĐÁP ÁN:
+   A. Number
+   B. Boolean
+   C. String [ĐÚNG ✅]
+   D. Object
+---------------------------
+CÂU HỎI: 12. Hàm nào ghi nội dung trực tiếp vào HTML?
+ĐÁP ÁN:
+   A. console.log()
+   B. alert()
+   C. document.write() [ĐÚNG ✅]
+   D. prompt()
+---------------------------
+CÂU HỎI: 13. Để chuyển dữ liệu từ prompt() thành số, dùng hàm nào?
+ĐÁP ÁN:
+   A. parseFloat()
+   B. toString()
+   C. Number()
+   D. A và C [ĐÚNG ✅]
+---------------------------
+CÂU HỎI: 14. Hàm chuyển chuỗi thành số nguyên là:
+ĐÁP ÁN:
+   A. Num()
+   B. parseInt() [ĐÚNG ✅]
+   C. parseFloat()
+   D. String()
+---------------------------
+CÂU HỎI: 15. Giá trị nào là falsy trong JavaScript?
+ĐÁP ÁN:
+   A. 0 [ĐÚNG ✅]
+   B. "Hello"
+   C. {}
+   D. 42
+---------------------------
+CÂU HỎI: 16. Phép toán nào sử dụng Type Coercion?
+ĐÁP ÁN:
+   A. "5" + 3
+   B. "5" - 3
+   C. "5" * 3
+   D. Tất cả các đáp án [ĐÚNG ✅]
+---------------------------
+CÂU HỎI: 17. Boolean() trả về true cho giá trị nào?
+ĐÁP ÁN:
+   A. 0
+   B. ""
+   C. "Hello" [ĐÚNG ✅]
+   D. null
+---------------------------
+CÂU HỎI: 18. Số nào được biểu diễn bằng số mũ trong JavaScript?
+ĐÁP ÁN:
+   A. 1e3 [ĐÚNG ✅]
+   B. 1000
+   C. 10^3
+   D. 1x10^3
+---------------------------
+CÂU HỎI: 19. Phương thức kiểm tra số nguyên là:
+ĐÁP ÁN:
+   A. Number.isFinite()
+   B. Number.isNaN()
+   C. Number.isInteger() [ĐÚNG ✅]
+   D. Number.isSafeInteger()
+---------------------------
+CÂU HỎI: 20. Khi nào NaN được trả về?
+ĐÁP ÁN:
+   A. Chia cho 0
+   B. Phép tính không hợp lệ
+   C. Giá trị không phải số
+   D. Cả B và C [ĐÚNG ✅]
+---------------------------
+CÂU HỎI: 21. Phương thức làm tròn đến chữ số thập phân là:
+ĐÁP ÁN:
+   A. Math.round()
+   B. Number.toFixed() [ĐÚNG ✅]
+   C. Math.floor()
+   D. Number.parseFloat()
+---------------------------
+CÂU HỎI: 22. Thuộc tính trả về số lớn nhất có thể biểu diễn là:
+ĐÁP ÁN:
+   A. Number.MAX_SAFE_INTEGER
+   B. Number.MAX_VALUE [ĐÚNG ✅]
+   C. Number.POSITIVE_INFINITY
+   D. Number.BIGGEST_NUMBER
+---------------------------
+CÂU HỎI: 23. Tên biến hợp lệ là:
+ĐÁP ÁN:
+   A. 1name
+   B. _age [ĐÚNG ✅]
+   C. my-name
+   D. let
+---------------------------
+CÂU HỎI: 24. Tên biến không hợp lệ là:
+ĐÁP ÁN:
+   A. studentName
+   B. $price
+   C. var [ĐÚNG ✅]
+   D. total_count
+---------------------------
+CÂU HỎI: 25. Quy tắc đặt tên biến đúng là:
+ĐÁP ÁN:
+   A. Có khoảng trắng
+   B. Bắt đầu bằng số
+   C. Phân biệt chữ hoa và chữ thường [ĐÚNG ✅]
+   D. Có ký tự đặc biệt
+---------------------------
+CÂU HỎI: 26. Tên biến theo camelCase là:
+ĐÁP ÁN:
+   A. FirstName
+   B. firstName [ĐÚNG ✅]
+   C. first_name
+   D. firstname
+---------------------------
+CÂU HỎI: 27. Phát biểu đúng về đặt tên biến:
+ĐÁP ÁN:
+   A. Có thể dùng từ khóa
+   B. Không được bắt đầu bằng _
+   C. Bắt đầu bằng chữ cái, _ hoặc $ [ĐÚNG ✅]
+   D. Không phân biệt hoa thường
+---------------------------
+CÂU HỎI: 28. Template string dùng ký hiệu nào?
+ĐÁP ÁN:
+   A. ' '
+   B. " "
+   C. ` ` [ĐÚNG ✅]
+   D. None
+---------------------------
+CÂU HỎI: 29. Kiểu dữ liệu string dùng để biểu diễn:
+ĐÁP ÁN:
+   A. Số nguyên
+   B. Chuỗi văn bản [ĐÚNG ✅]
+   C. Mảng
+   D. Đối tượng
+---------------------------
+CÂU HỎI: 30. Dấu không dùng để khai báo chuỗi là:
+ĐÁP ÁN:
+   A. " "
+   B. ' '
+   C. < > [ĐÚNG ✅]
+   D. ` `
+---------------------------
+CÂU HỎI: 31. Template string là gì?
+ĐÁP ÁN:
+   A. Chuỗi cho phép nhúng biến hoặc biểu thức [ĐÚNG ✅]
+   B. Biến đặc biệt
+   C. Phương thức
+   D. Chỉ dùng dấu "
+---------------------------
+CÂU HỎI: 32. Thuộc tính .length trả về:
+ĐÁP ÁN:
+   A. Số từ
+   B. Số ký tự [ĐÚNG ✅]
+   C. Không tính khoảng trắng
+   D. Chuỗi đảo ngược
+---------------------------
+CÂU HỎI: 33. .toLowerCase() dùng để:
+ĐÁP ÁN:
+   A. Chữ hoa
+   B. Chữ thường [ĐÚNG ✅]
+   C. Xóa khoảng trắng
+   D. Độ dài chuỗi
+---------------------------
+CÂU HỎI: 34. Phương thức kiểm tra chuỗi con là:
+ĐÁP ÁN:
+   A. indexOf()
+   B. slice()
+   C. includes() [ĐÚNG ✅]
+   D. concat()
+---------------------------
+CÂU HỎI: 35. .replace("old","new") dùng để:
+ĐÁP ÁN:
+   A. Thay tất cả
+   B. Thay chuỗi đầu tiên [ĐÚNG ✅]
+   C. Xóa chuỗi
+   D. Thêm chuỗi
+---------------------------
+CÂU HỎI: 36. Phương thức tách chuỗi thành mảng là:
+ĐÁP ÁN:
+   A. split() [ĐÚNG ✅]
+   B. concat()
+   C. slice()
+   D. charAt()
+---------------------------
+CÂU HỎI: 37. Biến có giá trị undefined là:
+ĐÁP ÁN:
+   A. let x = 5
+   B. let y [ĐÚNG ✅]
+   C. let z = null
+   D. let a = "undefined"
+---------------------------
+CÂU HỎI: 38. Khi nào biến có giá trị undefined?
+ĐÁP ÁN:
+   A. Chưa khai báo
+   B. Khai báo nhưng chưa gán [ĐÚNG ✅]
+   C. Gán null
+   D. Chuỗi rỗng
+---------------------------
+CÂU HỎI: 39. null === undefined cho kết quả:
+ĐÁP ÁN:
+   A. true
+   B. false [ĐÚNG ✅]
+   C. null
+   D. undefined
+---------------------------
+CÂU HỎI: 40. Phương thức tính căn bậc ba là:
+ĐÁP ÁN:
+   A. Math.sqrt()
+   B. Math.cbrt() [ĐÚNG ✅]
+   C. Math.pow(x, 1/3)
+   D. Cả B và C
+---------------------------
+CÂU HỎI: 41. Giá trị nào sau đây được coi là falsy trong JavaScript?
+ĐÁP ÁN:
+   A. "false"
+   B. []
+   C. undefined [ĐÚNG ✅]
+   D. {}
+---------------------------
+CÂU HỎI: 42. Toán tử ! được sử dụng để làm gì trong JavaScript?
+ĐÁP ÁN:
+   A. So sánh hai giá trị
+   B. Đảo ngược giá trị Boolean [ĐÚNG ✅]
+   C. Kiểm tra kiểu dữ liệu
+   D. Gán giá trị mặc định
+---------------------------
+CÂU HỎI: 43. Giá trị nào sau đây là truthy trong JavaScript?
+ĐÁP ÁN:
+   A. 0
+   B. ""
+   C. "false" [ĐÚNG ✅]
+   D. null
+---------------------------
+CÂU HỎI: 44. Biểu thức nào sau đây trả về true?
+ĐÁP ÁN:
+   A. 0 && 1
+   B. " " || false [ĐÚNG ✅]
+   C. null && true
+   D. undefined || null
+---------------------------
+CÂU HỎI: 45. Điều kiện nào sau đây là falsy?
+ĐÁP ÁN:
+   A. 1
+   B. "0"
+   C. null [ĐÚNG ✅]
+   D. {}
+---------------------------
+CÂU HỎI: 46. Toán tử nào sau đây kiểm tra bằng nghiêm ngặt?
+ĐÁP ÁN:
+   A. ==
+   B. !=
+   C. === [ĐÚNG ✅]
+   D. !==
+---------------------------
+CÂU HỎI: 47. Biểu thức nào sau đây trả về false?
+ĐÁP ÁN:
+   A. 0 == false
+   B. " " == false
+   C. null == 0 [ĐÚNG ✅]
+   D. undefined == null
+---------------------------
+CÂU HỎI: 48. Toán tử !== trong JavaScript được sử dụng để làm gì?
+ĐÁP ÁN:
+   A. Kiểm tra không bằng lỏng lẻo
+   B. Kiểm tra không bằng nghiêm ngặt [ĐÚNG ✅]
+   C. Kiểm tra bằng lỏng lẻo
+   D. Kiểm tra bằng nghiêm ngặt
+---------------------------
+CÂU HỎI: 49. Biểu thức nào sau đây trả về true?
+ĐÁP ÁN:
+   A. "false" == false
+   B. "0" == false [ĐÚNG ✅]
+   C. null == 0
+   D. undefined == 0
+---------------------------
+CÂU HỎI: 50. Câu lệnh điều kiện trong lập trình được dùng để làm gì?
+ĐÁP ÁN:
+   A. Lặp lại một đoạn mã nhiều lần
+   B. Lưu trữ dữ liệu
+   C. Thực thi các khối mã khác nhau dựa trên điều kiện đúng hoặc sai [ĐÚNG ✅]
+   D. Khai báo biến mới
+---------------------------
+CÂU HỎI: 51. Trong JavaScript, kết quả của điều kiện trong câu lệnh if luôn có kiểu dữ liệu gì?
+ĐÁP ÁN:
+   A. Number
+   B. Boolean [ĐÚNG ✅]
+   C. String
+   D. Object
+---------------------------
+CÂU HỎI: 52. Câu lệnh else trong cấu trúc if...else được thực thi khi nào?
+ĐÁP ÁN:
+   A. Khi điều kiện trong if đúng
+   B. Khi điều kiện trong if sai [ĐÚNG ✅]
+   C. Khi có lỗi cú pháp
+   D. Khi người dùng nhập dữ liệu
+---------------------------
+CÂU HỎI: 53. Trong cấu trúc if...else if...else, khi nào chương trình ngừng kiểm tra các điều kiện còn lại?
+ĐÁP ÁN:
+   A. Khi gặp điều kiện đầu tiên sai
+   B. Khi gặp điều kiện đầu tiên đúng [ĐÚNG ✅]
+   C. Khi tất cả điều kiện sai
+   D. Khi không có khối else
+---------------------------
+CÂU HỎI: 54. Câu lệnh điều kiện rút gọn (ternary operator) có cú pháp đúng là:
+ĐÁP ÁN:
+   A. if (điều_kiện) ? đúng : sai
+   B. điều_kiện ? giá_trị_nếu_đúng : giá_trị_nếu_sai [ĐÚNG ✅]
+   C. if (điều_kiện) then else
+   D. điều_kiện ? else if : else
+---------------------------
+CÂU HỎI: 55. Toán tử ! được sử dụng để làm gì?
+ĐÁP ÁN:
+   A. Đảo ngược giá trị của một biểu thức boolean [ĐÚNG ✅]
+   B. So sánh hai giá trị
+   C. Kiểm tra xem giá trị có phải là số không
+   D. Gán giá trị cho biến
+---------------------------
+CÂU HỎI: 56. Trong biểu thức A && B, nếu A là false thì kết quả là:
+ĐÁP ÁN:
+   A. true
+   B. false [ĐÚNG ✅]
+   C. Giá trị của B
+   D. Không xác định
+---------------------------
+CÂU HỎI: 57. Kết quả của biểu thức (true && false) là:
+ĐÁP ÁN:
+   A. true
+   B. false [ĐÚNG ✅]
+   C. undefined
+   D. null
+---------------------------
+CÂU HỎI: 58. Kết quả của biểu thức (false || true) là:
+ĐÁP ÁN:
+   A. true [ĐÚNG ✅]
+   B. false
+   C. undefined
+   D. null
+---------------------------
+CÂU HỎI: 59. Kết quả của biểu thức (!true) là:
+ĐÁP ÁN:
+   A. true
+   B. false [ĐÚNG ✅]
+   C. undefined
+   D. null
+---------------------------
+CÂU HỎI: 60. Câu lệnh switch dùng để làm gì trong JavaScript?
+ĐÁP ÁN:
+   A. Lặp lại code
+   B. So sánh một biến với nhiều giá trị khác nhau [ĐÚNG ✅]
+   C. Khai báo biến mới
+   D. Thực thi bất đồng bộ
+---------------------------
+CÂU HỎI: 61. Từ khóa nào dùng để kết thúc một case trong switch?
+ĐÁP ÁN:
+   A. end
+   B. stop
+   C. break [ĐÚNG ✅]
+   D. exit
+---------------------------
+CÂU HỎI: 62. Nếu bỏ break trong một case thì điều gì xảy ra?
+ĐÁP ÁN:
+   A. switch dừng ngay
+   B. Các case tiếp theo tiếp tục thực thi [ĐÚNG ✅]
+   C. default tự chạy
+   D. Lỗi cú pháp
+---------------------------
+CÂU HỎI: 63. Từ khóa default trong switch dùng để:
+ĐÁP ÁN:
+   A. Thực thi khi không có case nào khớp [ĐÚNG ✅]
+   B. Kết thúc switch
+   C. Khởi tạo biến
+   D. So sánh biến
+---------------------------
+CÂU HỎI: 64. Muốn nhiều case thực hiện cùng một hành động, bạn sẽ:
+ĐÁP ÁN:
+   A. Viết nhiều switch
+   B. Liệt kê các case liên tiếp không có break [ĐÚNG ✅]
+   C. Dùng if-else
+   D. Không thể làm
+---------------------------
+CÂU HỎI: 65. Giá trị nào dưới đây là falsy?
+ĐÁP ÁN:
+   A. null [ĐÚNG ✅]
+   B. "false"
+   C. {}
+   D. 42
+---------------------------
+CÂU HỎI: 66. Biểu thức nào trả về false khi dùng Boolean()?
+ĐÁP ÁN:
+   A. undefined [ĐÚNG ✅]
+   B. {}
+   C. []
+   D. " "
+---------------------------
+CÂU HỎI: 67. Mảng rỗng được coi là:
+ĐÁP ÁN:
+   A. Truthy [ĐÚNG ✅]
+   B. Falsy
+   C. Không xác định
+   D. Tùy ngữ cảnh
+---------------------------
+CÂU HỎI: 68. Giá trị nào là falsy trong danh sách sau?
+ĐÁP ÁN:
+   A. "0"
+   B. NaN [ĐÚNG ✅]
+   C. Infinity
+   D. {}
+---------------------------
+CÂU HỎI: 69. Cú pháp đúng của vòng lặp for trong JavaScript là gì?
+ĐÁP ÁN:
+   A. for i = 0; i < 10; i++ { }
+   B. for (i = 0; i < 10; i++) { } [ĐÚNG ✅]
+   C. for (i < 10; i++) { }
+   D. for (i = 0; i < 10) { }
+---------------------------
+CÂU HỎI: 70. Trong vòng lặp for, phần biểu thức khởi tạo được thực hiện khi nào?
+ĐÁP ÁN:
+   A. Sau mỗi lần lặp
+   B. Trước khi vòng lặp bắt đầu [ĐÚNG ✅]
+   C. Sau khi kết thúc vòng lặp
+   D. Trước và sau mỗi vòng lặp
+---------------------------
+CÂU HỎI: 71. Điều kiện trong vòng lặp for có vai trò gì?
+ĐÁP ÁN:
+   A. Xác định biến điều khiển
+   B. Quyết định vòng lặp còn tiếp tục hay không [ĐÚNG ✅]
+   C. Cập nhật giá trị biến điều khiển
+   D. In ra kết quả
+---------------------------
+CÂU HỎI: 72. Trong for (let i = 0; i < 5; i++), i++ có nghĩa là gì?
+ĐÁP ÁN:
+   A. Tăng giá trị i lên 1 [ĐÚNG ✅]
+   B. Giảm giá trị i xuống 1
+   C. Giữ nguyên giá trị i
+   D. Đặt lại i = 0
+---------------------------
+CÂU HỎI: 73. Khi điều kiện trong vòng lặp for luôn đúng, điều gì xảy ra?
+ĐÁP ÁN:
+   A. Vòng lặp chạy 1 lần
+   B. Vòng lặp dừng ngay
+   C. Vòng lặp chạy vô hạn [ĐÚNG ✅]
+   D. Vòng lặp bị lỗi cú pháp
+---------------------------
+CÂU HỎI: 74. Khi nào xảy ra một vòng lặp vô hạn (infinite loop)?
+ĐÁP ÁN:
+   A. Khi điều kiện luôn đúng
+   B. Khi không có break
+   C. Khi giá trị kiểm tra không thay đổi
+   D. Tất cả các đáp án trên [ĐÚNG ✅]
+---------------------------
+CÂU HỎI: 75. Trong vòng lặp lồng nhau, vòng lặp nào được thực hiện trước?
+ĐÁP ÁN:
+   A. Vòng lặp bên ngoài
+   B. Vòng lặp bên trong [ĐÚNG ✅]
+   C. Cả hai đồng thời
+   D. Tùy trình duyệt
+---------------------------
+CÂU HỎI: 76. Giá trị nào có thể thoát khỏi vòng lặp vô hạn?
+ĐÁP ÁN:
+   A. break
+   B. return
+   C. while (false)
+   D. Tất cả các đáp án trên [ĐÚNG ✅]
+---------------------------
+CÂU HỎI: 77. Điều kiện nào sau đây sẽ không gây ra vòng lặp vô hạn?
+ĐÁP ÁN:
+   A. while (true)
+   B. for (;;) {}
+   C. while (false) [ĐÚNG ✅]
+   D. do { console.log("Hi"); } while (true)
+---------------------------
+CÂU HỎI: 78. Từ khóa break dùng để làm gì?
+ĐÁP ÁN:
+   A. Dừng vòng lặp và quay lại đầu
+   B. Dừng hoàn toàn vòng lặp, thoát ra ngoài [ĐÚNG ✅]
+   C. Bỏ qua lần lặp hiện tại
+   D. Kết thúc chương trình
+---------------------------
+CÂU HỎI: 79. Điều gì xảy ra khi continue được thực thi trong vòng lặp for?
+ĐÁP ÁN:
+   A. Vòng lặp kết thúc
+   B. Dòng sau continue vẫn chạy
+   C. Bỏ qua phần còn lại của lần lặp hiện tại và sang lần lặp kế tiếp [ĐÚNG ✅]
+   D. Lỗi cú pháp
+---------------------------
+CÂU HỎI: 80. Khi nào nên sử dụng break trong vòng lặp?
+ĐÁP ÁN:
+   A. Bỏ qua một lần lặp
+   B. Kết thúc toàn bộ vòng lặp sớm hơn dự kiến [ĐÚNG ✅]
+   C. Reset biến
+   D. Tạm dừng vòng lặp
+---------------------------
+CÂU HỎI: 81. Cặp từ khóa dùng để điều khiển luồng lặp là:
+ĐÁP ÁN:
+   A. return và exit
+   B. stop và skip
+   C. break và continue [ĐÚNG ✅]
+   D. pause và resume
+---------------------------
+CÂU HỎI: 82. Nếu break nằm trong vòng lặp lồng nhau thì:
+ĐÁP ÁN:
+   A. Chỉ thoát vòng lặp gần nhất chứa nó [ĐÚNG ✅]
+   B. Thoát tất cả vòng lặp
+   C. Thoát chương trình
+   D. Không ảnh hưởng
+---------------------------
+CÂU HỎI: 83. Câu lệnh while dùng để làm gì?
+ĐÁP ÁN:
+   A. Lặp với số lần xác định
+   B. Lặp cho đến khi điều kiện là false [ĐÚNG ✅]
+   C. Dừng chương trình
+   D. Chỉ kiểm tra dữ liệu nhập
+---------------------------
+CÂU HỎI: 84. Cú pháp đúng của vòng lặp while là:
+ĐÁP ÁN:
+   A. while { điều kiện }
+   B. while (điều kiện) { thực hiện tác vụ } [ĐÚNG ✅]
+   C. while [điều kiện] do { }
+   D. while (điều kiện) : { }
+---------------------------
+CÂU HỎI: 85. Nếu điều kiện trong while luôn đúng thì:
+ĐÁP ÁN:
+   A. Kết thúc ngay
+   B. Vòng lặp chạy vô hạn [ĐÚNG ✅]
+   C. Bỏ qua lần lặp
+   D. Lỗi cú pháp
+---------------------------
+CÂU HỎI: 86. Trong trò chơi đoán số, từ khóa dùng để thoát vòng lặp khi đoán đúng là:
+ĐÁP ÁN:
+   A. continue
+   B. break [ĐÚNG ✅]
+   C. return
+   D. stop
+---------------------------
+CÂU HỎI: 87. Trường hợp phù hợp để dùng while là:
+ĐÁP ÁN:
+   A. In số 1 → 10
+   B. Nhập đúng mật khẩu mới dừng [ĐÚNG ✅]
+   C. Lặp mảng 5 phần tử
+   D. Tăng biến theo bước cố định
+---------------------------
+CÂU HỎI: 88. Khác biệt chính giữa while và do...while là:
+ĐÁP ÁN:
+   A. do...while kiểm tra trước
+   B. do...while chạy ít nhất một lần, while có thể không chạy [ĐÚNG ✅]
+   C. do...while không dùng break
+   D. Không khác biệt
+---------------------------
+CÂU HỎI: 89. Cú pháp đúng của do...while là:
+ĐÁP ÁN:
+   A. do { thực hiện } while (điều kiện); [ĐÚNG ✅]
+   B. do (thực hiện) while { }
+   C. while { } do { }
+   D. do while (điều kiện) { }
+---------------------------
+CÂU HỎI: 90. Nếu điều kiện trong do...while luôn đúng thì:
+ĐÁP ÁN:
+   A. Dừng ngay
+   B. Chạy một lần
+   C. Vòng lặp vô hạn [ĐÚNG ✅]
+   D. Báo lỗi
+---------------------------
+CÂU HỎI: 91. Ví dụ phù hợp cho do...while là:
+ĐÁP ÁN:
+   A. In số 1 → 10
+   B. Hiển thị menu ít nhất một lần trước khi kiểm tra lựa chọn [ĐÚNG ✅]
+   C. Lặp mảng
+   D. Tăng biến theo bước
+---------------------------
+CÂU HỎI: 92. Cú pháp nào sau đây đúng để khai báo một mảng rỗng trong JavaScript?
+ĐÁP ÁN:
+   A. let arr = {};
+   B. let arr = [];
+   C. let arr = new Array;
+   D. Cả B và C đều đúng [ĐÚNG ✅]
+---------------------------
+CÂU HỎI: 93. Bạn có thể lưu trữ những kiểu dữ liệu nào trong một mảng JavaScript?
+ĐÁP ÁN:
+   A. Chỉ số nguyên
+   B. Chỉ chuỗi
+   C. Bất kỳ kiểu dữ liệu nào [ĐÚNG ✅]
+   D. Chỉ đối tượng
+---------------------------
+CÂU HỎI: 94. Câu nào đúng về mảng trong JavaScript?
+ĐÁP ÁN:
+   A. Mảng chỉ chứa số
+   B. Mảng có kích thước cố định
+   C. Mảng trong JavaScript là một đối tượng đặc biệt [ĐÚNG ✅]
+   D. Mảng không thể lồng nhau
+---------------------------
+CÂU HỎI: 95. Đoạn mã nào tạo một mảng gồm 3 phần tử?
+ĐÁP ÁN:
+   A. let arr = [1, 2, 3];
+   B. let arr = new Array(3);
+   C. let arr = new Array(1, 2, 3);
+   D. A và C [ĐÚNG ✅]
+---------------------------
+CÂU HỎI: 96. Phần tử trong mảng được gọi là gì?
+ĐÁP ÁN:
+   A. Index
+   B. Element [ĐÚNG ✅]
+   C. Length
+   D. Value
+---------------------------
+CÂU HỎI: 97. Thuộc tính .length trong mảng dùng để làm gì?
+ĐÁP ÁN:
+   A. Trả về phần tử đầu
+   B. Trả về phần tử cuối
+   C. Trả về số lượng phần tử trong mảng [ĐÚNG ✅]
+   D. Trả về chỉ số
+---------------------------
+CÂU HỎI: 98. Truy cập chỉ số không tồn tại trong mảng sẽ trả về:
+ĐÁP ÁN:
+   A. 0
+   B. null
+   C. undefined [ĐÚNG ✅]
+   D. Lỗi
+---------------------------
+CÂU HỎI: 99. Cú pháp đúng để truy cập phần tử thứ 3 trong mảng menu là:
+ĐÁP ÁN:
+   A. menu[2] [ĐÚNG ✅]
+   B. menu[3]
+   C. menu(3)
+   D. menu.3
+---------------------------
+CÂU HỎI: 100. Cú pháp nào lặp qua mảng mà không cần dùng index?
+ĐÁP ÁN:
+   A. for (let i = 0; i < array.length; i++)
+   B. for (let element of array) [ĐÚNG ✅]
+   C. while(array)
+   D. array[index]
+---------------------------
+CÂU HỎI: 101. Truy cập phần tử cuối cùng của mảng menu (không biết độ dài):
+ĐÁP ÁN:
+   A. menu[menu.length]
+   B. menu[menu.length - 1] [ĐÚNG ✅]
+   C. menu[-1]
+   D. menu.last()
+---------------------------
+CÂU HỎI: 102. Thuộc tính dùng để tính chỉ số phần tử cuối cùng là:
+ĐÁP ÁN:
+   A. arr.lastIndex
+   B. arr.length - 1 [ĐÚNG ✅]
+   C. arr.size - 1
+   D. arr.length
+---------------------------
+CÂU HỎI: 103. Lệnh cập nhật phần tử thứ 3 của mảng [10, 20, 30, 40] thành 50 là:
+ĐÁP ÁN:
+   A. arr[2] = 50; [ĐÚNG ✅]
+   B. arr[3] = 50;
+   C. arr[4] = 50;
+   D. arr[5] = 50;
+---------------------------
+CÂU HỎI: 104. Gán giá trị vượt quá độ dài mảng sẽ:
+ĐÁP ÁN:
+   A. Tạo các phần tử undefined ở giữa [ĐÚNG ✅]
+   B. Không thay đổi mảng
+   C. Gây lỗi runtime
+   D. Bị bỏ qua
+---------------------------
+CÂU HỎI: 105. Phương thức thêm phần tử vào cuối mảng là:
+ĐÁP ÁN:
+   A. unshift()
+   B. push() [ĐÚNG ✅]
+   C. splice()
+   D. concat()
+---------------------------
+CÂU HỎI: 106. Phương thức thêm phần tử vào đầu mảng là:
+ĐÁP ÁN:
+   A. push()
+   B. splice()
+   C. unshift() [ĐÚNG ✅]
+   D. concat()
+---------------------------
+CÂU HỎI: 107. Phương thức thêm phần tử tại vị trí bất kỳ là:
+ĐÁP ÁN:
+   A. push()
+   B. splice() [ĐÚNG ✅]
+   C. unshift()
+   D. map()
+---------------------------
+CÂU HỎI: 108. Thêm phần tử tại chỉ số lớn hơn độ dài mảng sẽ:
+ĐÁP ÁN:
+   A. Tạo các khoảng trống undefined [ĐÚNG ✅]
+   B. Bị bỏ qua
+   C. Gây lỗi
+   D. Không thay đổi
+---------------------------
+CÂU HỎI: 109. Phương thức xóa phần tử cuối mảng là:
+ĐÁP ÁN:
+   A. shift()
+   B. splice()
+   C. pop() [ĐÚNG ✅]
+   D. filter()
+---------------------------
+CÂU HỎI: 110. Phương thức xóa phần tử tại vị trí bất kỳ là:
+ĐÁP ÁN:
+   A. pop()
+   B. splice() [ĐÚNG ✅]
+   C. shift()
+   D. map()
+---------------------------
+CÂU HỎI: 111. Phương thức trả về phần tử bị xóa ở cuối mảng là:
+ĐÁP ÁN:
+   A. shift()
+   B. pop() [ĐÚNG ✅]
+   C. splice()
+   D. filter()
+---------------------------
+CÂU HỎI: 112. splice() với deleteCount = 0 sẽ:
+ĐÁP ÁN:
+   A. Không xóa phần tử nào [ĐÚNG ✅]
+   B. Xóa tất cả phần tử
+   C. Thay bằng undefined
+   D. Gây lỗi
+---------------------------
+CÂU HỎI: 113. splice() có làm thay đổi mảng gốc không?
+ĐÁP ÁN:
+   A. Có [ĐÚNG ✅]
+   B. Không
+---------------------------
+CÂU HỎI: 114. splice() có thể dùng để:
+ĐÁP ÁN:
+   A. Chỉ xóa
+   B. Chỉ thêm
+   C. Thêm, xóa, thay thế phần tử [ĐÚNG ✅]
+   D. Sao chép mảng
+---------------------------
+CÂU HỎI: 115. Phương thức nối hai mảng mà không làm thay đổi mảng gốc là:
+ĐÁP ÁN:
+   A. push()
+   B. concat() [ĐÚNG ✅]
+   C. splice()
+   D. reverse()
+---------------------------
+CÂU HỎI: 116. Phương thức kiểm tra phần tử có tồn tại trong mảng (true/false):
+ĐÁP ÁN:
+   A. indexOf()
+   B. includes() [ĐÚNG ✅]
+   C. split()
+   D. join()
+---------------------------
+CÂU HỎI: 117. Phương thức tách chuỗi thành mảng là:
+ĐÁP ÁN:
+   A. join()
+   B. split() [ĐÚNG ✅]
+   C. concat()
+   D. indexOf()
+---------------------------
+CÂU HỎI: 118. includes() và indexOf() khác nhau ở điểm nào?
+ĐÁP ÁN:
+   A. includes trả về giá trị
+   B. includes trả về vị trí
+   C. includes trả về true/false, indexOf trả về vị trí hoặc -1 [ĐÚNG ✅]
+   D. Không khác
+---------------------------
+CÂU HỎI: 119. for...in dùng để duyệt qua gì trong mảng?
+ĐÁP ÁN:
+   A. Giá trị
+   B. Chỉ số (index) [ĐÚNG ✅]
+   C. Cả hai
+   D. Không dùng cho mảng
+---------------------------
+CÂU HỎI: 120. Khi nào nên dùng for...in thay vì for...of?
+ĐÁP ÁN:
+   A. Duyệt giá trị mảng
+   B. Duyệt chỉ số / thuộc tính của mảng [ĐÚNG ✅]
+   C. Duyệt đối tượng không phải mảng
+   D. Duyệt chuỗi
+---------------------------
+CÂU HỎI: 121. Cách phù hợp nhất để duyệt mảng khi chỉ cần giá trị là:
+ĐÁP ÁN:
+   A. for...in
+   B. for...of [ĐÚNG ✅]
+   C. map
+   D. Cả B và C đều đúng
+---------------------------
+CÂU HỎI: 122. Hàm trong JavaScript là gì?
+ĐÁP ÁN:
+   A. Một biến đặc biệt chứa dữ liệu.
+   B. Một khối mã được đóng gói và có thể tái sử dụng. [ĐÚNG ✅]
+   C. Một kiểu dữ liệu mới.
+   D. Một phần của vòng lặp.
+---------------------------
+CÂU HỎI: 123. Từ khóa nào được dùng để khai báo hàm trong JavaScript?
+ĐÁP ÁN:
+   A. func
+   B. declare
+   C. function [ĐÚNG ✅]
+   D. define
+---------------------------
+CÂU HỎI: 124. Dòng lệnh nào sau đây đúng cú pháp khai báo hàm?
+ĐÁP ÁN:
+   A. function DisplayTodos { ... }
+   B. function DisplayTodos() { ... } [ĐÚNG ✅]
+   C. DisplayTodos function() { ... }
+   D. function: DisplayTodos() { ... }
+---------------------------
+CÂU HỎI: 125. Cách nào dưới đây là đúng để gọi một hàm có tên là showList?
+ĐÁP ÁN:
+   A. showList;
+   B. showList[];
+   C. showList(); [ĐÚNG ✅]
+   D. call showList;
+---------------------------
+CÂU HỎI: 126. Mục đích chính của việc sử dụng hàm là gì?
+ĐÁP ÁN:
+   A. Giảm tốc độ chạy chương trình.
+   B. Lặp lại mã dễ dàng hơn.
+   C. Tái sử dụng mã và tránh trùng lặp. [ĐÚNG ✅]
+   D. Tăng kích thước mã nguồn.
+---------------------------
+
+`;
